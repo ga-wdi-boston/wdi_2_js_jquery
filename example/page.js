@@ -17,7 +17,7 @@ var countCertainWordsInString = function(theString,
   return wordCounts;
 };
 
-var countAllWord = function(the String) {
+var countAllWord = function(theString) {
   var wordCounts = {};
   var words = theString.split(" ");
   words.forEach(function(word) {
@@ -31,6 +31,7 @@ var countAllWord = function(the String) {
 };
 
 $(document).ready(function(){
+  var clickedOnParagraph;
 
   $('#minimap p').click(function(){
     // this is the object that the function was called on
@@ -47,5 +48,29 @@ $(document).ready(function(){
     $('#bon').html(counts.bon || 'none');
     $('#dolor').html(counts.dolor || 'none');
 
+    clickedOnParagraph = this;
   });
+
+   $('#word-frequencies').click(function() {
+    var wordCount = countAllWord(clickedOnParagraph.innerText);
+    // OR countAllWord($('#cicero p').innerText));
+
+   var resultsTable = '<table>';
+
+   for (var word in wordCount) {
+    var tableRow = '<tr><td>' + word + '</td><td>' + wordCount[word] + '</td></tr>';
+    resultsTable += tableRow;
+   }
+   resultsTable += '</table>';
+
+   $('#frequency-table').html(resultsTable);
+
+
+
+
+   });
 });
+
+
+
+
