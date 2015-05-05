@@ -1,4 +1,19 @@
-p {
+div#minimap {
+  width: 25%;
+  float: right;
+  font-size: 3pt;
+}
+
+div#main {
+  float:left;
+  width: 60%;
+}
+
+body {
   font-family: Palatino, serif;
-  font-size: 12;
+  font-size: 12pt;
+}
+
+.selected-paragraph {
+  background-color: purple;
 }
