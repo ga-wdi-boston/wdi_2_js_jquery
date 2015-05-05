@@ -1,4 +1,4 @@
-![General Assembly Logo](http://i.imgur.com/ke8USTq.png)
+gi![General Assembly Logo](http://i.imgur.com/ke8USTq.png)
 
 # jQuery Introduction: Research Project From Fell
 
@@ -38,12 +38,30 @@ turns purple in the minimap!"
 for 'good,' 'bad,' and 'pain' are used!"
 
 (And he goes into a lengthy explanation of Latin nouns, from which you take
-away that any word starting with bon-, mal-, or dolor- should be counted.)
+away that any word starting with bon-, mal-, or dolor - should be counted.)
 
 ## Task 4
 
 "And maybe add a button that, when they click it, shows them a table of
-frequencies for *all* the words in that paragraph!"
+frequencies for *all* the words in that paragraph
+
+
+* add a button to HTML page
+* $( ? ).click (function(){ ? });
+* add another table to HTML page OR add a placeholder for the table
+* fill in click function
+
+### Task 4a
+
+Dr Fell makes a face when he sees the table.  "I thought computers were supposed to make things EASIER!" he says.  Then he gets an idea.  "Add a box the user can type into, and when he clicks the button, tell him how many times the word is in the paragraph!"
+
+<input type="text" name"name">
+ vs <input type="text" id="foo">
+$('#foo').val()
+$('#foo').val(27);
+$('input[name="name"]').val()
+
+---
 
 ## Task 5
 
